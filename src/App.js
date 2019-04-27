@@ -53,7 +53,7 @@ class AddTodo extends Component {
       <div>
         <input
           name="name"
-          placeholder="name"
+          placeholder="position"
           onChange={ev => {
             this.handleChange("name", ev);
           }}
@@ -64,7 +64,7 @@ class AddTodo extends Component {
         />
         <input
           name="description"
-          placeholder="description"
+          placeholder="preferred salary"
           onChange={ev => {
             this.handleChange("description", ev);
           }}
