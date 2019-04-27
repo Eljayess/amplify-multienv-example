@@ -91,7 +91,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2>Add Todo</h2>
+        <h2>What type of job are you looking for?</h2>
         <Connect mutation={graphqlOperation(mutations.createTodo)}>
           {({ mutation }) => <AddTodo onCreate={mutation} />}
         </Connect>
@@ -113,7 +113,7 @@ class App extends Component {
             return listTodos.items.length ? (
               <ListView todos={listTodos ? listTodos.items : []} />
             ) : (
-              <h3>No todos yet...</h3>
+              <h3>No jobs yet...</h3>
             );
           }}
         </Connect>
